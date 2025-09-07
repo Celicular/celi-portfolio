@@ -1,0 +1,116 @@
+/* Thin */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-Thin.eot');
+  src: local('Without Alt Sans Thin'), local('WithoutAltSans-Thin'),
+      url('./fonts/WithoutAltSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Thin.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Thin.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-ExtraLight.eot');
+  src: local('Without Alt Sans ExtraLight'), local('WithoutAltSans-ExtraLight'),
+      url('./fonts/WithoutAltSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-ExtraLight.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-ExtraLight.woff') format('woff'),
+      url('./fonts/WithoutAltSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-Light.eot');
+  src: local('Without Alt Sans Light'), local('WithoutAltSans-Light'),
+      url('./fonts/WithoutAltSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Light.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Light.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Book / Regular */
+@font-face {
+  font-family: 'Without Alt Sans Book';
+  src: url('./fonts/WithoutAltSans-Book.eot');
+  src: local('Without Alt Sans Book'), local('WithoutAltSans-Book'),
+      url('./fonts/WithoutAltSans-Book.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Book.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Book.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-Medium.eot');
+  src: local('Without Alt Sans Medium'), local('WithoutAltSans-Medium'),
+      url('./fonts/WithoutAltSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Medium.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Medium.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-SemiBold.eot');
+  src: local('Without Alt Sans SemiBold'), local('WithoutAltSans-SemiBold'),
+      url('./fonts/WithoutAltSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-SemiBold.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-SemiBold.woff') format('woff'),
+      url('./fonts/WithoutAltSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-Bold.eot');
+  src: local('Without Alt Sans Bold'), local('WithoutAltSans-Bold'),
+      url('./fonts/WithoutAltSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Bold.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Bold.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Without Alt Sans';
+  src: url('./fonts/WithoutAltSans-Black.eot');
+  src: local('Without Alt Sans Black'), local('WithoutAltSans-Black'),
+      url('./fonts/WithoutAltSans-Black.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-Black.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-Black.woff') format('woff'),
+      url('./fonts/WithoutAltSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* UltraBlack */
+@font-face {
+  font-family: 'Without Alt Sans UltraBlack';
+  src: url('./fonts/WithoutAltSans-UltraBlack.eot');
+  src: local('Without Alt Sans UltraBlack'), local('WithoutAltSans-UltraBlack'),
+      url('./fonts/WithoutAltSans-UltraBlack.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/WithoutAltSans-UltraBlack.woff2') format('woff2'),
+      url('./fonts/WithoutAltSans-UltraBlack.woff') format('woff'),
+      url('./fonts/WithoutAltSans-UltraBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
