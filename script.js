@@ -4,6 +4,21 @@ const mainContent = main.innerHTML;
 const welcomeText = "Welcome";
 let text = "";
 
+const about = document.querySelector(".about");
+const creations = document.querySelector(".creations");
+const footer = document.querySelector(".footer");
+
+document.querySelector(".menu-about").addEventListener("click", () => {
+    about.scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".menu-creations").addEventListener("click", () => {
+    creations.scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".menu-footer").addEventListener("click", () => {
+    footer.scrollIntoView({ behavior: "smooth" });
+});
 
 
 
@@ -136,3 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.querySelector(".b2t").addEventListener("click", (e) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+})
