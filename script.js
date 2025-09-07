@@ -40,7 +40,7 @@ function wait(ms) {
 }
 
 async function loadWelcome(){  
-  document.body.style.overflow = "hidden";
+  
   main.innerHTML = `
     <div class="welcomeDiv">
       <h1 class="welcome"></h1>
@@ -70,7 +70,9 @@ async function loadWelcome(){
 
     await wait(800);
     main.innerHTML = mainContent;
-    document.querySelector("body").style.overflowY = "none";
+    document.querySelectorAll("*").forEach(el => {
+    el.style.overflowY = "auto";
+});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -91,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const allSkills = document.querySelectorAll('.skills > ul > li');
   const allContacts = document.querySelectorAll('.Contacts > ul > li');
   const title = document.querySelector(".heading")
+  setProject(currentProject)
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -122,6 +125,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (firstContact) observer.observe(firstContact);
   document.querySelectorAll('.aboutme').forEach(el => observer.observe(el));
   observer.observe(title);
+  observer.observe(document.querySelector(".sub"));
+  observer.observe(document.querySelector(".sub2"));
+  observer.observe(document.querySelector(".pDisplay"));
+  observer.observe(document.querySelector(".fhead"));
+   observer.observe(document.querySelector(".b2t"));
+   observer.observe(document.querySelector(".quote"));
+
+
 });
 
 
