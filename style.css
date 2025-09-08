@@ -329,17 +329,17 @@ body {
 
 .circle:nth-child(2){
   animation: 0.5s slideInLeft ease-out;
-  background-image: url("./assets/heropic1.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/Celicular/cdn-celi@main/heropic1.png");
 }
 
 .circle:nth-child(3){
   animation: 0.7s slideInLeft ease-out;
-  background-image: url("./assets/heropic2.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/Celicular/cdn-celi@main/heropic2.png");
 }
 
 .circle:nth-child(4){
   animation: 0.9s slideInLeft ease-out;
-  background-image: url("./assets/heropic3.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/Celicular/cdn-celi@main/heropic3.png");
   margin-bottom: 50px;
 }
 
