@@ -4,21 +4,31 @@ const mainContent = main.innerHTML;
 const welcomeText = "Welcome";
 let text = "";
 
-const about = document.querySelector(".about");
-const creations = document.querySelector(".creations");
-const footer = document.querySelector(".footer");
 
-document.querySelector(".menu-about").addEventListener("click", () => {
-    about.scrollIntoView({ behavior: "smooth" });
-});
+const navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+      console.log(scrollY);
+        if (window.scrollY > 100) {
+            navbar.classList.add("glass");  
+        } else {
+            navbar.classList.remove("glass");
+        }
+    });
+    
 
-document.querySelector(".menu-creations").addEventListener("click", () => {
-    creations.scrollIntoView({ behavior: "smooth" });
-});
-
-document.querySelector(".menu-footer").addEventListener("click", () => {
-    footer.scrollIntoView({ behavior: "smooth" });
-});
+const scrollToSection = (index) => {
+  if(index != 2){
+    window.scrollTo({
+    top: (window.innerHeight - (window.innerHeight*12/100)) * index,
+    behavior: "smooth"
+  });
+  }else{
+    window.scrollTo({
+    top: (window.innerHeight - (window.innerHeight*6/100)) * index,
+    behavior: "smooth"
+  });
+  }
+};
 
 
 
@@ -103,6 +113,14 @@ if ('scrollRestoration' in history) {
   };
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+
+
+  const sections = document.querySelectorAll(".ssection");
+
+  
+
+
   const firstSkill = document.querySelector('.skills > h2');
   const firstContact = document.querySelector('.Contacts > h2');
   const allSkills = document.querySelectorAll('.skills > ul > li');
