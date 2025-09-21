@@ -30,13 +30,13 @@ const scrollToSection = (index) => {
   }
 };
 
+
 window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = {
     supportsFiber: true,
     inject: function() {},
     onCommitFiberRoot: function() {},
     onCommitFiberUnmount: function() {},
-};
-
+  };
 
 function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
@@ -77,7 +77,7 @@ function wait(ms) {
 }
 
 async function loadWelcome(){  
-  
+
   main.innerHTML = `
     <div class="welcomeDiv">
       <h1 class="welcome"></h1>

@@ -93,6 +93,29 @@ function setProject(id){
 
 }
 
+document.querySelector(".pm").addEventListener("click", (e) => {
+    if(currentProject == 5){
+        currentProject = 0;
+    }
+    else{
+        currentProject++;
+    }
+
+    setProject(currentProject)
+})
+
+document.querySelector(".nm").addEventListener("click", (e) => {
+    if(currentProject == 0){
+        currentProject = 5;
+    }
+    else{
+        currentProject--;
+    }
+
+    setProject(currentProject)
+})
+
+
 document.querySelector(".previous").addEventListener("click", (e) => {
     if(currentProject == 5){
         currentProject = 0;

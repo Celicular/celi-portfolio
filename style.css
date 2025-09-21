@@ -603,6 +603,43 @@ body {
 .previous:hover {
   transform: scale(1.1);
 }
+.nm,
+.pm {
+  width: clamp(40px, 5vw, 70px);   
+  height: clamp(40px, 5vw, 70px);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: invert(1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  transition: transform 0.3s ease, background-position 0.3s ease;
+  margin-right: 5%;
+}
+
+.nm {
+  background-image: url(./assets/arrow.svg);
+  transform: rotate(180deg);
+  margin-right: 1%;
+}
+
+.pm {
+  background-image: url(./assets/arrow.svg);
+  
+}
+
+.nm:hover {
+  transform: rotate(180deg) scale(1.1); 
+}
+
+.pm:hover {
+  transform: scale(1.1);
+}
 
 .theProject{
   width: 100%;
