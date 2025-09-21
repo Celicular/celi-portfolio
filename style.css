@@ -299,15 +299,15 @@ body {
   height: 3px;
   background-color: white;
   margin-left: 8%;
-  animation: slideIn 0.5s ease-out;
+  animation: slideIn 0.5s ease-out forwards;
 }
 
 .mainHero>h1{
   color: white;
   font-size: 4.5rem;
   font-weight: 300;
-  animation: fadeIn 0.7s ease-in;
   margin-left: 8%;
+  animation: fadeIn 0.7s ease-in;
 }
 
 .mainSide{
@@ -651,6 +651,10 @@ body {
   transform: translateY(0);
 }
 
+.m-controls{
+  display: none;
+}
+
 .pDisplay{
   width: 90%;
   height: 75%;
@@ -843,3 +847,6 @@ body {
   align-items: center;
   flex-direction: row;
 }
+
+
+

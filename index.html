@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celi Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemob.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/Celicular/cdn-celi/proj5.png" as="image">
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/Celicular/cdn-celi/proj6.png" as="image">
 
+    
 
 
 
@@ -29,19 +31,54 @@
             <div class="section">
                 <h1>C€li</h1>
             </div>
-            <div class="section">
+
+            <div class="section desktop-menu">
                 <ul>
                     <li class="menu-about" onclick="scrollToSection(1)">About</li>
                     <li class="menu-creations" onclick="scrollToSection(2)">Créations</li>
                     <li class="menu-footer" onclick="scrollToSection(3)">Find me</li>
                 </ul>
             </div>
-            <div class="section">
-                <div class="iconCont" onclick="window.location.href = 'https://github.com/celicular'"><div class="icon github" style="background-image: url(https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/github.png);"></div><p class="icon-text">Github</p></div>
-                <div class="iconCont" onclick="window.location.href = 'https://hswebsolution.onrender.com'"><div class="icon website" style="background-image: url(https://hswebsolution.onrender.com/_next/image?url=%2FH.ico&w=96&q=75);"></div><p class="icon-text">Website</p></div>
-                <div class="iconCont" onclick="window.location.href = 'https://instagram.com/that_annoying.boi'"><div class="icon instagram" style="background-image: url(https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png);"></div><p class="icon-text">Instagram</p></div>
-                
-                
+
+            <div class="section desktop-icons">
+                <div class="iconCont" onclick="window.location.href = 'https://github.com/celicular'">
+                    <div class="icon github" style="background-image: url(https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/github.png);"></div>
+                    <p class="icon-text">Github</p>
+                </div>
+                <div class="iconCont" onclick="window.location.href = 'https://hswebsolution.onrender.com'">
+                    <div class="icon website" style="background-image: url(https://hswebsolution.onrender.com/_next/image?url=%2FH.ico&w=96&q=75);"></div>
+                    <p class="icon-text">Website</p>
+                </div>
+                <div class="iconCont" onclick="window.location.href = 'https://instagram.com/that_annoying.boi'">
+                    <div class="icon instagram" style="background-image: url(https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png);"></div>
+                    <p class="icon-text">Instagram</p>
+                </div>
+            </div>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li onclick="scrollToSection(1); toggleMenu()">About</li>
+                    <li onclick="scrollToSection(2); toggleMenu()">Créations</li>
+                    <li onclick="scrollToSection(3); toggleMenu()">Find me</li>
+                </ul>
+
+                <div class="mobile-icons">
+                    <div class="iconCont" onclick="window.location.href = 'https://github.com/celicular'">
+                        <div class="icon github" style="background-image: url(https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/github.png);"></div>
+                    </div>
+                    <div class="iconCont" onclick="window.location.href = 'https://hswebsolution.onrender.com'">
+                        <div class="icon website" style="background-image: url(https://hswebsolution.onrender.com/_next/image?url=%2FH.ico&w=96&q=75);"></div>
+                    </div>
+                    <div class="iconCont" onclick="window.location.href = 'https://instagram.com/that_annoying.boi'">
+                        <div class="icon instagram" style="background-image: url(https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png);"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="hero">
@@ -104,6 +141,10 @@
                             <h2 class="heading sub" id="projectHead"></h2>
                             <h2 class="heading sub2" id="projectSubHead">Website</h2>
                             <div class="pDisplay"></div>
+                            <div class="controls m-controls">
+                                <div class="next"></div>
+                                <div class="previous"></div>
+                            </div>
                         </div>
                         <div class="details">
                             <a target="_blank" href="" class="viewProject">View Project</a>
